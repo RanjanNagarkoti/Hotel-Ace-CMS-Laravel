@@ -1,0 +1,25 @@
+.profile-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.my-container{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    grid: auto / auto auto auto;
+}
+
+.grid-second{
+    display: grid;
+    grid: auto/ auto auto;
+}
+
+.myNav{
+    display: flex;
+}

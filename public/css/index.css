@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: whitesmoke;
+}
+
+.overlay{
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+  width: 100%;
+  height: 90vh;
+  opacity: 5%;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.give-space{
+  margin: 0px 10%;
+}
+.slide-img {
+  vertical-align: middle;
+  width: 100%;
+  height: 90vh;
+}
+.slide-img-long{
+  vertical-align: middle;
+  width: 80%;
+  height: 60vh;
+  margin: 0px auto;
+  background-position: cover;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100% ;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
+  text-align: center;
+}
+.text-long{
+  position: absolute;
+  color: white;
+  left: 1%;
+  font-weight: 500;
+  bottom: 0px;
+  text-align: center;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  text-align: center;
+}
+.line{
+  border-bottom: 2px solid black;
+  width: 10rem;
+  margin: auto;
+}
+.liner{
+  border-bottom: 2px solid grey;
+  width: 15rem;
+  margin: auto;
+}
+.title{
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: 50;
+  font-size: 64px;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 10s;
+  background-color: black;
+}
+
+@keyframes fade {
+  from {opacity: 4} 
+  to {opacity: 1}
+}
+nav{
+  max-width: 100%;
+  display: flex;
+  padding: 0vw 10vw;
+  background-color: white;
+}
+
+.logo-pic{
+  width: 30px;
+  height: 30px;
+}
+.ace{
+  margin-left: 0.2rem;
+}
+.logo{
+  width: 30%;
+  margin: 5px 0px;
+  font-family: 'Playfair Display', serif;
+  
+}
+.logo a{
+  color: black;
+  text-decoration: none;
+}
+.my-menu{
+  margin-left: 20%;
+  margin-top: 10px;
+  display: flex;
+  width: 70%;
+}
+
+.my-menu li{
+  list-style: none;
+}
+
+.my-menu a{
+  text-decoration: none;
+  color: black;
+  margin: 0px 1.5rem;
+  padding: 8px;
+}
+.rooms{
+  margin: 1rem 10vw 0rem 10vw;
+}
+
+.room-img{
+  width: 100%;
+  height: auto;
+}
+
+.room-item{
+  background-color: white;
+  text-align: center;
+  margin: 1rem auto;
+}
+.price{
+  color: grey;
+}
+.room-item-box{
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-around;
+}
+.descripton{
+  margin: 2rem 0rem;
+}
+
+#output{
+  display: none;
+  width: 400px;
+  height: auto;
+}
+
+#edit-preview{
+  width: 400px;
+  height: auto;
+}
+
+#edit-output{
+  width: 400px;
+  height: auto;
+}
+
+.center{
+  text-align: center;
+}
+
+.fa-edit{
+  color: #4e73df;
+}
+.fa-trash{
+  color: red;
+}
+.space{
+  margin-left: 5px;
+}
+/*Custom From w3*/
+
+.dropbtn {
+  width: auto;
+  border: 2px solid royalblue;
+  border-radius: 5px;
+  width: 110px;
+  height: auto;
+}
+
+.dropbtnl {
+  border: none;
+  background-color: none;
+  padding: 10px;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: royalblue;
+  color: white;
+}
+
+.dropdown-content {
+  width: 110px;
+  display: none;
+  position: absolute;
+  color: white;
+  z-index: 1;
+}
+.show {display: block;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.search-box{
+  width: 60%;
+  display: flex;
+  margin: 1rem auto 0px auto;
+}
+
+.form-outline{
+  width: 90%;
+}
+
+.search-btn{
+  width: 10%;
+}
+
+.my-h2{
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin: 3rem 0rem 2rem 0rem;
+}
+
+.container{
+  margin: 2rem auto;
+}
+
+.book-rooms-forms{
+  border: 1px solid grey;
+}
+
+#quotes{
+  text-align: center;
+  margin: 1rem 0rem;
+  font-style: italic;
+}
+
+.margin{
+  margin-top: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+sup{
+  color: red;
+}
+
+#about-display{
+  width: 100%;
+  height: 95vh;
+  position: absolute;
+}
+
+.img-title-about h1{
+  color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-title-about p{
+  position: absolute;
+  color: black;
+  bottom: 10%;
+  margin: 0% 30%;
+  text-align: center;
+}
+.small-preview{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+.small-preview:hover{
+  transform: scale(2);
+}
+
+.w-5 {
+  display: none;
+}
